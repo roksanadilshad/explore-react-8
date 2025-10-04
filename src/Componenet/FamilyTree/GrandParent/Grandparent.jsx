@@ -1,15 +1,17 @@
-import React from 'react';
+
 import Father from '../Father';
 import Aunt from '../Aunt';
 import Uncle from '../Uncle';
-import './Grandparent.css'
+import './Grandparent.css';
 
-const GrandParent = () => {
+
+const GrandParent = ({asset}) => {
+    
     return (
         <div className='Family-tree'>
             <h2>Grand Parent</h2>
             <div className='siblings'>
-                <Father></Father>
+                <Father asset={asset}></Father>
             <Aunt></Aunt>
             <Uncle></Uncle>
             </div>
